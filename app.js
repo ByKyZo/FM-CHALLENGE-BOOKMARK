@@ -5,7 +5,7 @@ const closeBurger = document.querySelector("#close")
 
 openBurger.addEventListener("click", () => {
 
-    document.querySelector("body").classList.add("overflow");
+    document.querySelector("html").classList.add("overflow");
 
     menuDisplay.classList.add("open-burger");
 
@@ -15,7 +15,7 @@ closeBurger.addEventListener("click", () => {
 
     menuDisplay.classList.remove("open-burger");
 
-    document.querySelector("body").classList.remove("overflow");
+    document.querySelector("html").classList.remove("overflow");
 
 })
 
