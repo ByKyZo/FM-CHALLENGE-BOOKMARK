@@ -1,0 +1,73 @@
+.section-4{
+    @include padMargLayoutRespons;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(-50%);
+    &__top{
+        max-width: 530px;
+        text-align: center;
+        &__title{
+            color: $VeryDarkBlue;
+        }
+        &__para{
+            margin: $marginPara;
+        }
+    }
+    &__faq{
+        width: 540px; 
+        font-size: 18px;
+        @media(max-width: 570px){
+            width: 100%;
+        }
+        &__item{
+            max-height: 65px; 
+            overflow: hidden;
+            transition: max-height 0.2s linear;
+            border-bottom: 1px solid $GrayishBlue;
+            &:nth-child(1){
+                border-top: 1px solid $GrayishBlue;
+            }
+            &__question{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                padding: 25px 0;
+                color: $VeryDarkBlue;
+                font-weight: bold;
+                font-size: 0.7em;
+                transition: color 0.3s;
+                &:hover{
+                    transition: 0.2s;
+                    color: $SoftRed;
+                }
+                .arrow{
+                    margin-right: 25px;
+                    transition: 0.4s;
+                }
+                .arrowPath{
+                    transition: 0.4s;
+                }
+            }
+            &__answer{
+                font-size: 0.7em;
+                color: #5b5b65;
+                line-height: 25px;
+                padding-bottom: 15px;
+            }
+        }
+        &__btn{
+            cursor: pointer;
+            padding: 12px 25px;
+            @include btn;
+            margin-top: 55px;
+        }
+    }
+}
+

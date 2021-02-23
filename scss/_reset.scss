@@ -1,0 +1,33 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+:root{
+    font-size: 18px;
+    scroll-behavior: smooth;
+    @media(max-width: 600px){
+        font-size: 13px;
+    }
+}
+
+
+body{
+    max-width: 1440px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+    color: $GrayishBlue;
+    position: relative;
+}

@@ -1,0 +1,17 @@
+@mixin padMargLayoutRespons {
+    padding: $paddingGlobal;
+
+    margin: 100px 0;
+
+    @media(max-width: 950px){
+        padding: $paddingGlobalMobile ;
+    }
+}
+
+@mixin btn {
+    border: none;
+    border-radius: $btn-radius;
+    background-color: $SoftBlue;
+    font-weight: bold;
+    color: white;
+}
